@@ -26,6 +26,19 @@ class TestForm {
 		int i = (3*21);
 		int totalchaussure = c1.size() + c2.size() + c3.size();
 		assertEquals(totalchaussure, i);
+		
+		for (Chaussure chaussure : c1) {
+			assertTrue(chaussure.getMarque().contains("Rossignol"));
+		}
+		
+		for (Chaussure chaussure : c2) {
+			assertTrue(chaussure.getMarque().contains("Dynastar"));
+		}
+		
+		for (Chaussure chaussure : c3) {
+			assertTrue(chaussure.getMarque().contains("Salomon"));
+		}
+		
 	}
 	
 	@Test
@@ -41,6 +54,18 @@ class TestForm {
 		int i = (3*101);
 		int totalski = ps1.size() + ps2.size() + ps3.size();
 		assertEquals(totalski, i);
+		
+		for (PaireSki paireSki : ps1) {
+			assertTrue(paireSki.getMarque().contains("Rossignol"));
+		}
+		
+		for (PaireSki paireSki : ps2) {
+			assertTrue(paireSki.getMarque().contains("Dynastar"));
+		}
+		
+		for (PaireSki paireSki : ps3) {
+			assertTrue(paireSki.getMarque().contains("Salomon"));
+		}
 	}
 	
 
