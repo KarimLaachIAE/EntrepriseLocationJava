@@ -205,7 +205,7 @@ public class InterfaceGraphique extends JFrame {
 						ps.setEquipementLouer(l2);
 					}
 					
-					ent.afficherInfosEquipementLouer();
+					ent.afficherInfosEquipement();
 						
 
 				}

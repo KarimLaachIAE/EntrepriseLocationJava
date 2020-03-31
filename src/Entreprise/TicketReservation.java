@@ -43,7 +43,6 @@ public class TicketReservation {
 		ticketreservation.flush();
 		ticketreservation.close();
 		
-		//System.out.println(infoticketreservation);
 		
 	}
 	

@@ -23,7 +23,7 @@ public class Entreprise {
 	}
 	
 	
-	public void afficherInfosEquipementLouer() {
+	public ArrayList<Equipement> afficherInfosEquipement() {
 		for(int i = 0; i < listeEquipement.size(); i++) {
 			if(listeEquipement.get(i).estLouer() == true) {
 				System.out.println("-----------------------------------------------------------------------------------------------");
@@ -36,6 +36,7 @@ public class Entreprise {
 			}
 		}
 		System.out.println("-----------------------------------------------------------------------------------------------");
+		return listeEquipement;
 	}
 	
 	public void creationCollectionChaussure(Entreprise ent, ArrayList<Chaussure> c1, ArrayList<Chaussure> c2, ArrayList<Chaussure> c3) {
